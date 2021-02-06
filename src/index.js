@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
 import Spinner from './Spinner';
+import Footer from './Footer';
 
 class App extends React.Component {
     state = { lat: null, errorMessage: '' };
@@ -26,7 +27,11 @@ class App extends React.Component {
 
     // react says that we have to define render!!
     render() {
-        return <div className='border red'>{this.renderContent()}</div>;
+        return (
+            <div className='border red'>
+                {this.renderContent()} <Footer />
+            </div>
+        );
     }
 }
 
