@@ -31,16 +31,19 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <MetAPI
-                    primaryImage={this.state.primaryImage}
-                    // title={this.state.title}
-                    style={{
-                        backgroundImage: `url(${this.state.primaryImage})`,
-                    }}
-                >
-                    {this.renderContent()}
-                </MetAPI>
-                {/* <Footer /> */}
+                <div className='wrapper'>
+                    <MetAPI
+                        primaryImage={this.state.primaryImage}
+                        // title={this.state.title}
+                        style={{
+                            backgroundImage: `url(${this.state.primaryImage})`,
+                        }}
+                    />
+                    {/* {this.renderContent()} */}
+                </div>
+                <div>
+                    <Footer />
+                </div>
             </div>
         );
     }

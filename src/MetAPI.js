@@ -5,7 +5,11 @@ import axios from 'axios';
 export default class MetAPI extends React.Component {
     state = {
         primaryImage: '',
+        accessionNumber: '',
         title: '',
+        artistDisplayName: '',
+        creditLine: '',
+        objectURL: '',
     };
 
     async componentDidMount(props) {
@@ -26,6 +30,10 @@ export default class MetAPI extends React.Component {
         this.setState({
             primaryImage: artObject.data.primaryImage,
             title: artObject.data.title,
+            accessionNumber: artObject.data.accessionNumber,
+            artistDisplayName: artObject.data.artistDisplayName,
+            creditLine: artObject.data.creditLine,
+            objectURL: artObject.data.objectURL,
         });
     }
     render() {
@@ -36,7 +44,18 @@ export default class MetAPI extends React.Component {
                     backgroundImage: `url(${this.state.primaryImage})`,
                 }}
             >
-                {/* {this.state.primaryImage} */}
+                {/* <img src={this.state.primaryImage} /> */}
+                <p>
+                    {this.state.accessionNumber}
+                    <br />
+                    {this.state.title}
+                    <br />
+                    {this.state.artistDisplayName}
+                    <br />
+                    {this.state.objectCreditline}
+                    <br />
+                    <a href={this.state.objectURL}>{this.state.objectURL}</a>
+                </p>
             </div>
         );
     }
