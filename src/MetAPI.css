@@ -1,0 +1,10 @@
+.primary-image {
+    /* Full height */
+    min-height: 100%;
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
