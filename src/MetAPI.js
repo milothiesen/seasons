@@ -7,26 +7,27 @@ export default class MetAPI extends React.Component {
         primaryImage: '',
         accessionNumber: '',
         title: '',
-        artistDisplayName: '',
-        creditLine: '',
-        objectURL: '',
+        season: null,
     };
 
     async componentDidMount(props) {
+        const season = this.props.season;
+        console.log(season);
         const [response] = await Promise.all([
             axios.get(
-                `https://collectionapi.metmuseum.org/public/collection/v1/search?q=snow`
+                `https://collectionapi.metmuseum.org/public/collection/v1/search?q=${season}`
             ),
         ]);
         const objectIDs = response.data.objectIDs;
         const randomObject =
             objectIDs[Math.floor(Math.random() * objectIDs.length)];
         console.log(randomObject);
+        // console.log(season);
         const artObject = await axios.get(
             'https://collectionapi.metmuseum.org/public/collection/v1/objects/' +
                 randomObject
         );
-        console.log(artObject.data.primaryImage);
+
         this.setState({
             primaryImage: artObject.data.primaryImage,
             title: artObject.data.title,

@@ -1,10 +1,9 @@
 import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SeasonDisplay from './SeasonDisplay';
+import SeasonDisplay2 from './SeasonDisplay2';
 import Spinner from './Spinner';
 import Footer from './Footer';
-import MetAPI from './MetAPI';
 
 class App extends React.Component {
     state = { lat: null, errorMessage: '' };
@@ -22,7 +21,7 @@ class App extends React.Component {
 
         if (!this.state.errorMessage && this.state.lat) {
             // return <MetAPI />;
-            return <SeasonDisplay lat={this.state.lat} />;
+            return <SeasonDisplay2 lat={this.state.lat} />;
         }
 
         return <Spinner message='Please accept location request' />;
