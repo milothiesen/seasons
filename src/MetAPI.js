@@ -8,6 +8,7 @@ export default class MetAPI extends React.Component {
         accessionNumber: '',
         title: '',
         season: null,
+        primaryImageSmall: '',
     };
 
     async componentDidMount(props) {
@@ -30,12 +31,14 @@ export default class MetAPI extends React.Component {
 
         this.setState({
             primaryImage: artObject.data.primaryImage,
+            primaryImageSmall: artObject.data.primaryImageSmall,
             title: artObject.data.title,
             accessionNumber: artObject.data.accessionNumber,
             artistDisplayName: artObject.data.artistDisplayName,
             creditLine: artObject.data.creditLine,
             objectURL: artObject.data.objectURL,
         });
+        console.log(this.state.primaryImageSmall);
     }
     render() {
         return (
@@ -46,17 +49,18 @@ export default class MetAPI extends React.Component {
                 }}
             >
                 {/* <img src={this.state.primaryImage} /> */}
-                <p>
-                    <a
-                        href={this.state.objectURL}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                    >
+
+                <a
+                    href={this.state.objectURL}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    <div className='art-info'>
                         <h1>{this.state.title}</h1>
-                        {this.state.accessionNumber}
-                    </a>
-                    <br />
-                </p>
+                        <p>{this.state.accessionNumber}</p>
+                    </div>
+                </a>
+                <br />
             </div>
         );
     }
