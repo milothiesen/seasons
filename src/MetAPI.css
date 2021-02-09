@@ -8,8 +8,15 @@
     background-repeat: no-repeat;
     margin: 0;
 }
-
+.primary-image h1 {
+    color: white;
+    background-color: black;
+}
 .primary-image p {
     background-color: black;
-    opacity: 0.75;
+    opacity: 0.9;
+}
+
+.primary-image a {
+    color: white;
 }

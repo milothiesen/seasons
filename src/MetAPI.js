@@ -15,7 +15,7 @@ export default class MetAPI extends React.Component {
     async componentDidMount(props) {
         const [response] = await Promise.all([
             axios.get(
-                `https://collectionapi.metmuseum.org/public/collection/v1/search?q=winter`
+                `https://collectionapi.metmuseum.org/public/collection/v1/search?q=snow`
             ),
         ]);
         const objectIDs = response.data.objectIDs;
@@ -46,11 +46,11 @@ export default class MetAPI extends React.Component {
             >
                 {/* <img src={this.state.primaryImage} /> */}
                 <p>
-                    {this.state.title}
+                    <a href={this.state.objectURL}>
+                        <h1>{this.state.title}</h1>
+                        {this.state.accessionNumber}
+                    </a>
                     <br />
-                    {this.state.accessionNumber}
-                    <br />
-                    <a href={this.state.objectURL}>{this.state.objectURL}</a>
                 </p>
             </div>
         );
