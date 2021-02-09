@@ -21,7 +21,8 @@ class App extends React.Component {
         }
 
         if (!this.state.errorMessage && this.state.lat) {
-            return <SeasonDisplay lat={this.state.lat} />;
+            return <MetAPI />;
+            // return <SeasonDisplay lat={this.state.lat} />;
         }
 
         return <Spinner message='Please accept location request' />;
@@ -31,16 +32,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div className='wrapper'>
-                    <MetAPI
-                        primaryImage={this.state.primaryImage}
-                        // title={this.state.title}
-                        style={{
-                            backgroundImage: `url(${this.state.primaryImage})`,
-                        }}
-                    />
-                    {/* {this.renderContent()} */}
-                </div>
+                <div className='wrapper'>{this.renderContent()}</div>
                 <div>
                     <Footer />
                 </div>

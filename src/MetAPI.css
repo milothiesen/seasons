@@ -9,14 +9,30 @@
     margin: 0;
 }
 .primary-image h1 {
-    color: white;
-    background-color: black;
+    font-family: MetSans-Semibold;
+    color: black;
+    background-color: white;
+    padding-top: 10px;
 }
 .primary-image p {
-    background-color: black;
-    opacity: 0.9;
+    font-family: MetSans-Regular;
+    background-color: white;
+    color: black;
+    padding-bottom: 10px;
 }
 
 .primary-image a {
-    color: white;
+    color: black;
+}
+
+@font-face {
+    font-family: 'MetSans-Semibold';
+    src: local('MetSans-Semibold'),
+        url(./fonts/TheMetSans-Semibold.woff2) format('truetype');
+}
+
+@font-face {
+    font-family: 'MetSans-Regular';
+    src: local('MetSans-Regular'),
+        url(./fonts/TheMetSans-Regular.woff2) format('truetype');
 }

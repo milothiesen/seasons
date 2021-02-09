@@ -46,7 +46,11 @@ export default class MetAPI extends React.Component {
             >
                 {/* <img src={this.state.primaryImage} /> */}
                 <p>
-                    <a href={this.state.objectURL}>
+                    <a
+                        href={this.state.objectURL}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
                         <h1>{this.state.title}</h1>
                         {this.state.accessionNumber}
                     </a>
