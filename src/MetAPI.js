@@ -46,13 +46,9 @@ export default class MetAPI extends React.Component {
             >
                 {/* <img src={this.state.primaryImage} /> */}
                 <p>
-                    {this.state.accessionNumber}
-                    <br />
                     {this.state.title}
                     <br />
-                    {this.state.artistDisplayName}
-                    <br />
-                    {this.state.objectCreditline}
+                    {this.state.accessionNumber}
                     <br />
                     <a href={this.state.objectURL}>{this.state.objectURL}</a>
                 </p>

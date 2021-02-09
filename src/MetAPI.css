@@ -8,3 +8,8 @@
     background-repeat: no-repeat;
     margin: 0;
 }
+
+.primary-image p {
+    background-color: black;
+    opacity: 0.75;
+}
