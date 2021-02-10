@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/seasons/static/css/main.f86e63d7.chunk.css",
-    "main.js": "/seasons/static/js/main.956f29ef.chunk.js",
-    "main.js.map": "/seasons/static/js/main.956f29ef.chunk.js.map",
+    "main.css": "/seasons/static/css/main.3d087d4c.chunk.css",
+    "main.js": "/seasons/static/js/main.349e4093.chunk.js",
+    "main.js.map": "/seasons/static/js/main.349e4093.chunk.js.map",
     "runtime-main.js": "/seasons/static/js/runtime-main.3ed704d2.js",
     "runtime-main.js.map": "/seasons/static/js/runtime-main.3ed704d2.js.map",
     "static/js/2.d9dc84c7.chunk.js": "/seasons/static/js/2.d9dc84c7.chunk.js",
     "static/js/2.d9dc84c7.chunk.js.map": "/seasons/static/js/2.d9dc84c7.chunk.js.map",
     "index.html": "/seasons/index.html",
-    "static/css/main.f86e63d7.chunk.css.map": "/seasons/static/css/main.f86e63d7.chunk.css.map",
+    "static/css/main.3d087d4c.chunk.css.map": "/seasons/static/css/main.3d087d4c.chunk.css.map",
     "static/js/2.d9dc84c7.chunk.js.LICENSE.txt": "/seasons/static/js/2.d9dc84c7.chunk.js.LICENSE.txt",
     "static/media/Footer.css": "/seasons/static/media/TheMetSans-Regular.123c214e.woff2",
     "static/media/MetAPI.css": "/seasons/static/media/TheMetSans-Semibold.3d1352f2.woff2"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.3ed704d2.js",
     "static/js/2.d9dc84c7.chunk.js",
-    "static/css/main.f86e63d7.chunk.css",
-    "static/js/main.956f29ef.chunk.js"
+    "static/css/main.3d087d4c.chunk.css",
+    "static/js/main.349e4093.chunk.js"
   ]
 }
