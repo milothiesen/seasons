@@ -48,8 +48,6 @@ export default class MetAPI extends React.Component {
                     backgroundImage: `url(${this.state.primaryImage})`,
                 }}
             >
-                {/* <img src={this.state.primaryImage} /> */}
-
                 <a
                     href={this.state.objectURL}
                     target='_blank'
