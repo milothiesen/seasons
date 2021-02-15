@@ -54,7 +54,12 @@ export default class MetAPI extends React.Component {
                     rel='noopener noreferrer'
                 >
                     <div className='art-info'>
-                        <h1>{this.state.title}</h1>
+                        {/* <h1>{this.state.title.substring(0, 128) + '...'}</h1> */}
+                        <h1>
+                            {this.state.title.length < 40
+                                ? this.state.title
+                                : this.state.title.substring(0, 40) + '...'}
+                        </h1>
                         <p>{this.state.accessionNumber}</p>
                     </div>
                 </a>

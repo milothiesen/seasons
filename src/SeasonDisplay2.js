@@ -4,11 +4,11 @@ import MetAPI from './MetAPI';
 
 const seasonConfig = {
     summer: {
-        text: '*it is warm in your hemisphere*',
+        // text: '*it is warm in your hemisphere*',
         searchTerm: 'swimming',
     },
     winter: {
-        text: '*it is cold in your hemisphere*',
+        // text: '*it is cold in your hemisphere*',
         searchTerm: 'snow',
     },
 };
@@ -23,10 +23,11 @@ const getSeason = (lat, month) => {
 
 const SeasonDisplay = (props) => {
     const season = getSeason(props.lat, new Date().getMonth());
-    const { text, searchTerm } = seasonConfig[season];
+    // const { text, searchTerm } = seasonConfig[season];
+    const { searchTerm } = seasonConfig[season];
     return (
         <div className={`season-display ${season}`}>
-            <h1>{text}</h1>
+            {/* <h1>{text}</h1> */}
             <MetAPI season={searchTerm} />
         </div>
     );

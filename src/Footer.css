@@ -11,6 +11,8 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-size: 1.35em;
+    align-items: center;
 }
 
 p {
@@ -19,6 +21,7 @@ p {
     margin: 0;
     bottom: 0;
     font-family: MetSans-Regular;
+    max-width: 85%;
 }
 
 @font-face {
