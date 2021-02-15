@@ -30,7 +30,7 @@ class App extends React.Component {
     // react says that we have to define render!!
     render() {
         return (
-            <div>
+            <div className='container'>
                 <div className='wrapper'>{this.renderContent()}</div>
                 <div>
                     <Footer />
