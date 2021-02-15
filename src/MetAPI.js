@@ -1,6 +1,8 @@
 import './MetAPI.css';
 import React from 'react';
 import axios from 'axios';
+// import ProgressiveImage from 'react-progressive-image';
+import useProgressiveImage from './useProgressiveImage';
 
 export default class MetAPI extends React.Component {
     state = {
@@ -38,7 +40,8 @@ export default class MetAPI extends React.Component {
             creditLine: artObject.data.creditLine,
             objectURL: artObject.data.objectURL,
         });
-        console.log(this.state.primaryImageSmall);
+        console.log('hello', this.state.primaryImageSmall);
+        // console.log(src);
     }
     render() {
         return (
